@@ -100,3 +100,20 @@ d3.json("epistasis.json", function(error, graph) {
         .attr("cy", function(d) { return d.y; });
   });
 });
+
+$(function() {
+      $('#show-legend').tipsy({ 
+      // fade: true,
+      gravity: 'ne', 
+      html: true,
+      delayOut: 2000,
+      title: function() {
+          return '<ul> \
+              <li style="color: #ff7f0e"> Replicated Gene </li> \
+              <li style="color: #1f77b4">Replicated SNP</li> \
+              <li style="color: #aec7e8">NOT replicated Gene or SNP</li> \
+              </ul> \
+              Hoover over nodes for more annotation'
+      }
+    })    
+  });
