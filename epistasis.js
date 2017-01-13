@@ -113,7 +113,7 @@ $(function() {
               <li style="color: #1f77b4">Replicated SNP</li> \
               <li style="color: #aec7e8">NOT replicated Gene or SNP</li> \
               </ul> \
-              Hoover over nodes for more annotation'
+              Hover over nodes for more annotation'
       }
     })    
   });
